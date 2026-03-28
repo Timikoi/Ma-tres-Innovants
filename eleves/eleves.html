@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Emploi du temps élèves</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background: #d9eaff;
+        }
+
+        td[contenteditable="true"] {
+            background: #f9fcff;
+            cursor: text;
+        }
+
+        td[contenteditable="true"]:focus {
+            outline: 2px solid #4a90e2;
+            background: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Emploi du temps élèves (modifiable)</h1>
+
+    <table>
+        <tr>
+            <th>Heure</th>
+            <th>Lundi</th>
+            <th>Mardi</th>
+            <th>Mercredi</th>
+            <th>Jeudi</th>
+            <th>Vendredi</th>
+        </tr>
+
+        <tr>
+            <td>9h00 - 10h00</td>
+            <td contenteditable="true">Multi Stick Estimation</td>
+            <td contenteditable="true">Seyes</td>
+            <td contenteditable="true">Lecture</td>
+            <td contenteditable="true">Maths</td>
+            <td contenteditable="true">Révisions</td>
+        </tr>
+
+        <tr>
+            <td>10h00 - 11h00</td>
+            <td contenteditable="true">Français</td>
+            <td contenteditable="true">Maths</td>
+            <td contenteditable="true">Activité</td>
+            <td contenteditable="true">Projet</td>
+            <td contenteditable="true">Dictée</td>
+        </tr>
+
+        <tr>
+            <td>11h00 - 12h00</td>
+            <td contenteditable="true">Exercices Educajou</td>
+            <td contenteditable="true">Lecture</td>
+            <td contenteditable="true">Exercices</td>
+            <td contenteditable="true">Maths</td>
+            <td contenteditable="true">Lecture</td>
+        </tr>
+    </table>
+
+</body>
+</html>
