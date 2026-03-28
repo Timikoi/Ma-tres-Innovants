@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Emploi du temps personnel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background: #ffe6c7;
+        }
+
+        td[contenteditable="true"] {
+            background: #fff9f0;
+            cursor: text;
+        }
+
+        td[contenteditable="true"]:focus {
+            outline: 2px solid #f5a623;
+            background: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Emploi du temps personnel (modifiable)</h1>
+
+    <table>
+        <tr>
+            <th>Heure</th>
+            <th>Lundi</th>
+            <th>Mardi</th>
+            <th>Mercredi</th>
+            <th>Jeudi</th>
+            <th>Vendredi</th>
+        </tr>
+
+        <tr>
+            <td>8h00 - 9h00</td>
+            <td contenteditable="true">Préparation</td>
+            <td contenteditable="true">Réunion</td>
+            <td contenteditable="true">Accueil</td>
+            <td contenteditable="true">Préparation</td>
+            <td contenteditable="true">Organisation</td>
+        </tr>
+
+        <tr>
+            <td>9h00 - 12h00</td>
+            <td contenteditable="true">Cours</td>
+            <td contenteditable="true">Cours</td>
+            <td contenteditable="true">Cours</td>
+            <td contenteditable="true">Cours</td>
+            <td contenteditable="true">Cours</td>
+        </tr>
+
+        <tr>
+            <td>13h30 - 16h00</td>
+            <td contenteditable="true">Corrections</td>
+            <td contenteditable="true">Réunion équipe</td>
+            <td contenteditable="true">Projets</td>
+            <td contenteditable="true">Formation</td>
+            <td contenteditable="true">Clôture semaine</td>
+        </tr>
+    </table>
+
+</body>
+</html>
