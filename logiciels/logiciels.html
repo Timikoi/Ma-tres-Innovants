@@ -2,57 +2,17 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Liste des logiciels</title>
+    <title>Emploi du temps élèves</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background: #f4f4f4;
             padding: 30px;
-            line-height: 1.6;
         }
 
         h1 {
             text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .section {
-            background: white;
-            padding: 20px;
             margin-bottom: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        }
-
-        h2 {
-            color: #4a90e2;
-            margin-top: 0;
-        }
-
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        li {
-            background: #e9f2ff;
-            padding: 12px;
-            margin-bottom: 10px;
-            border-radius: 6px;
-        }
-
-        .invented li {
-            background: #fff4d6;
-        }
-
-        a {
-            color: #005bbb;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
         }
 
         .back {
@@ -65,95 +25,78 @@
             border-radius: 8px;
             font-weight: bold;
         }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background: #d9eaff;
+        }
+
+        td[contenteditable="true"] {
+            background: #f9fcff;
+            cursor: text;
+        }
+
+        td[contenteditable="true"]:focus {
+            outline: 2px solid #4a90e2;
+            background: #ffffff;
+        }
     </style>
 </head>
 <body>
 
     <a class="back" href="../index.html">Retour à l’accueil</a>
 
-    <h1>Liste des logiciels</h1>
+    <h1>Emploi du temps élèves (modifiable)</h1>
 
-    <!-- LOGICIELS EDUCAJOU -->
-    <div class="section">
-        <h2>Logiciels Educajou</h2>
-        <ul>
-            <li>
-                <a href="https://educajou.forge.apps.education.fr/multistick/?n=8" target="_blank">
-                    Multi Stick
-                </a>
-                – Manipulation de bâtons pour comprendre les quantités.
-            </li>
+    <table>
+        <tr>
+            <th>Heure</th>
+            <th>Lundi</th>
+            <th>Mardi</th>
+            <th>Mercredi</th>
+            <th>Jeudi</th>
+            <th>Vendredi</th>
+        </tr>
 
-            <li>
-                <a href="https://educajou.forge.apps.education.fr/estimation/?mode=qcm" target="_blank">
-                    Estimation
-                </a>
-                – Exercices pour estimer des quantités et des valeurs.
-            </li>
+        <tr>
+            <td>9h00 - 10h00</td>
+            <td contenteditable="true">Multi Stick</td>
+            <td contenteditable="true">Estimation</td>
+            <td contenteditable="true">Lecture</td>
+            <td contenteditable="true">Maths</td>
+            <td contenteditable="true">Révisions</td>
+        </tr>
 
-            <li>
-                <a href="https://educajou.forge.apps.education.fr/seyes/" target="_blank">
-                    Seyes
-                </a>
-                – Entraînement à l’écriture sur lignes Seyes.
-            </li>
+        <tr>
+            <td>10h00 - 11h00</td>
+            <td contenteditable="true">Français</td>
+            <td contenteditable="true">Maths</td>
+            <td contenteditable="true">Activité</td>
+            <td contenteditable="true">Projet</td>
+            <td contenteditable="true">Dictée</td>
+        </tr>
 
-            <li>
-                <a href="https://educajou.apps.education.fr/dictees/" target="_blank">
-                    Dictées interactives
-                </a>
-                – Dictées adaptées au niveau de l’élève.
-            </li>
-
-            <li>
-                <a href="https://educajou.apps.education.fr/lecture/" target="_blank">
-                    Lecture pas à pas
-                </a>
-                – Compréhension de texte et lecture guidée.
-            </li>
-        </ul>
-    </div>
-
-    <!-- LOGICIELS INVENTÉS -->
-    <div class="section invented">
-        <h2>Logiciels inventés</h2>
-        <ul>
-            <li>
-                <a href="xetyien-writer.html">
-                    Xetyien Writer
-                </a>
-                – Apprendre et écrire en alphabet Xetyien.
-            </li>
-
-            <li>
-                <a href="liomvy-map-builder.html">
-                    Liomvy Map Builder
-                </a>
-                – Construire des cartes de ton univers.
-            </li>
-
-            <li>
-                <a href="school-manager.html">
-                    School Manager 2D
-                </a>
-                – Gérer une école virtuelle.
-            </li>
-
-            <li>
-                <a href="educajou-plus.html">
-                    Educajou+ Personnalisé
-                </a>
-                – Exercices adaptés pour Papa.
-            </li>
-
-            <li>
-                <a href="chrono-dictee-royale.html">
-                    Chrono Dictée Royale
-                </a>
-                – Dictées dans l’univers de Liomvy.
-            </li>
-        </ul>
-    </div>
+        <tr>
+            <td>11h00 - 12h00</td>
+            <td contenteditable="true">Seyes</td>
+            <td contenteditable="true">Lecture</td>
+            <td contenteditable="true">Exercices</td>
+            <td contenteditable="true">Maths</td>
+            <td contenteditable="true">Lecture</td>
+        </tr>
+    </table>
 
 </body>
 </html>
