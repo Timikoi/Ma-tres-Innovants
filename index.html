@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil – Emplois du temps</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 20px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            border-radius: 10px;
+            transition: 0.2s;
+        }
+
+        .eleves {
+            background-color: #4a90e2;
+        }
+
+        .personnel {
+            background-color: #f5a623;
+        }
+
+        .logiciels {
+            background-color: #7ac943;
+        }
+
+        .btn:hover {
+            transform: scale(1.08);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Choisissez une section</h1>
+
+    <div class="button-container">
+        <a class="btn eleves" href="eleves.html">Emploi du temps élèves</a>
+        <a class="btn personnel" href="personnel.html">Emploi du temps personnel</a>
+        <a class="btn logiciels" href="logiciels.html">Page des logiciels</a>
+    </div>
+
+</body>
+</html>
